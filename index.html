@@ -780,14 +780,14 @@
           return row.name + " | " + formPackage(row.qty) + " | SL: " + row.packages + " | " + (row.unitPrice * row.packages) + "đ";
         }).join("\n");
         var values = {
-          "entry.2b0e7215": name,
-          "entry.2bbf3f6a": phone,
-          "entry.690a2b3e": address,
-          "entry.621d15de": orderDetails,
-          "entry.667a38c4": String(total),
-          "entry.4e8fc632": payment === "Chuyển khoản trước" ? "Chuyển khoản trước" : "Thanh toán khi nhận hàng (COD)",
-          "entry.296d4419": orderCode,
-          "entry.1c6c0110": note
+          "entry.722366997": name,
+          "entry.733953898": phone,
+          "entry.1762274110": address,
+          "entry.1646073310": orderDetails,
+          "entry.1719285956": String(total),
+          "entry.1318045234": payment === "Chuyển khoản trước" ? "Chuyển khoản trước" : "Thanh toán khi nhận hàng (COD)",
+          "entry.695026713": orderCode,
+          "entry.476840208": note
         };
         var query = Object.keys(values).filter(function (key) {
           return values[key] !== "" && values[key] != null;
